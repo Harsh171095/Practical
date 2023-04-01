@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SigninVC" customModule="demoP" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAppleSignIn" destination="Xqy-7t-SVd" id="h1Y-vH-0cg"/>
+                <outlet property="btnGoogleSigIn" destination="1wO-w8-jg8" id="606-ks-rda"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBottom" destination="oo0-ST-jKS" id="SxD-ia-mjd"/>
+                <outlet property="viewTop" destination="dAc-5T-hEI" id="pQf-Hi-8b2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oo0-ST-jKS">
+                    <rect key="frame" x="0.0" y="492" width="414" height="370"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RUI-eY-8ML">
+                            <rect key="frame" x="20" y="130" width="374" height="110"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqy-7t-SVd">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="PRI-zx-ejP"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Sign In with Apple">
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="btnAppleSignIN_click" destination="-1" eventType="touchUpInside" id="CGr-pd-eaM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wO-w8-jg8">
+                                    <rect key="frame" x="0.0" y="65" width="374" height="45"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Sigin in with Google"/>
+                                    <connections>
+                                        <action selector="btnGoogleSignIN_click" destination="-1" eventType="touchUpInside" id="YkC-dI-nTN"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RUI-eY-8ML" firstAttribute="centerY" secondItem="oo0-ST-jKS" secondAttribute="centerY" id="EJo-cw-rYk"/>
+                        <constraint firstItem="RUI-eY-8ML" firstAttribute="centerX" secondItem="oo0-ST-jKS" secondAttribute="centerX" id="bQn-Iq-H1d"/>
+                        <constraint firstItem="RUI-eY-8ML" firstAttribute="leading" secondItem="oo0-ST-jKS" secondAttribute="leading" constant="20" id="krr-Kx-qhg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAc-5T-hEI">
+                    <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vht-b1-kMX">
+                            <rect key="frame" x="170.5" y="209" width="73" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemMintColor"/>
+                    <constraints>
+                        <constraint firstItem="Vht-b1-kMX" firstAttribute="centerX" secondItem="dAc-5T-hEI" secondAttribute="centerX" id="fBt-0A-qQH"/>
+                        <constraint firstItem="Vht-b1-kMX" firstAttribute="centerY" secondItem="dAc-5T-hEI" secondAttribute="centerY" id="luA-Ck-khd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.98431372549019602" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dAc-5T-hEI" secondAttribute="trailing" id="6b7-bD-6p5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oo0-ST-jKS" secondAttribute="bottom" id="BEe-IP-Rnj"/>
+                <constraint firstItem="dAc-5T-hEI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RuW-cU-b5Q"/>
+                <constraint firstItem="dAc-5T-hEI" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.5" id="br1-Gx-jeW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oo0-ST-jKS" secondAttribute="trailing" id="gUb-5B-lJY"/>
+                <constraint firstItem="oo0-ST-jKS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gx8-Ma-uPk"/>
+                <constraint firstItem="oo0-ST-jKS" firstAttribute="top" secondItem="dAc-5T-hEI" secondAttribute="bottom" id="oCb-sW-Geo"/>
+                <constraint firstItem="dAc-5T-hEI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="tAc-0Q-Tlz"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
